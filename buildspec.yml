@@ -19,8 +19,8 @@ phases:
     commands:
       - echo Entered the build phase...
       - echo Build started on `date`
-      - GOOS=linux GOARCH=arm64 go build $(LDFLAGS) -o app-linux-arm64
-      - GOOS=darwin GOARCH=arm64 go build $(LDFLAGS) -o app-darwin-arm64
+      - GOOS=linux GOARCH=arm64 go build -o app-linux-arm64
+      - GOOS=darwin GOARCH=arm64 go build -o app-darwin-arm64
     finally:
       - echo This always runs even if the install command fails
   post_build:
