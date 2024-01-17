@@ -1,9 +1,6 @@
 version: 0.2
 
-run-as: root
-
 env:
-  shell: bash
   variables:
     key: "value"
 
