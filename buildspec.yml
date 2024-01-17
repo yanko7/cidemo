@@ -29,6 +29,7 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - app
+    - app-linux-arm64
+    - app-darwin-arm64
   discard-paths: yes
 
