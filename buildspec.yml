@@ -13,6 +13,7 @@ phases:
   pre_build:
     commands:
       - echo Entered the pre_build phase...
+      - go test
     finally:
       - echo This always runs even if the login command fails 
   build:
